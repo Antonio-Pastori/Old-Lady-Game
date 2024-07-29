@@ -1,0 +1,57 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 2px;
+}
+
+.quadrado{
+   background-color: rgb(175, 164, 164);
+   border-radius: 5px;
+}
+
+.quadrado:hover{
+    background-color: rgb(104, 105, 106);
+}
+
+.x{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.x .material-symbols-outlined{
+    font-size: 35vw;
+    display: none;
+    
+}
+
+.bola{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bola .material-symbols-outlined{
+    font-size: 20vw;
+    display: none;
+}
