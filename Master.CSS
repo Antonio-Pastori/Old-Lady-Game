@@ -20,6 +20,7 @@ body{
 .quadrado{
    background-color: rgb(175, 164, 164);
    border-radius: 5px;
+   position: relative; /* Necessário para posicionar os ícones filhos */
 }
 
 .quadrado:hover{
@@ -32,26 +33,37 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    visibility: hidden;
+    
 }
 
 .x .material-symbols-outlined{
-    font-size: 35vw;
-    display: none;
+    font-size: 10vw;
+    
+    cursor: pointer; /* Define o cursor como padrão de ponteiro */
+    pointer-events: none; /* Ignora todos os eventos do mouse nos ícones */
     
 }
 
 .bola{
     height: 100%;
     width: 100%;
-    position: relative;
-    margin-top: -20vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    visibility: hidden;
+    
 }
 
 .bola .material-symbols-outlined{
-    font-size: 20vw;
-    display: none;
+    font-size: 10vw;
+    
+    cursor: pointer; /* Define o cursor como padrão de ponteiro */
+    pointer-events: none; /* Ignora todos os eventos do mouse nos ícones */
+}
+
+.x.mostrar, .bola.mostrar{
+    visibility: visible;
 }
